@@ -32,10 +32,12 @@ body.light .navbar {
 }
 
 .nav-links a {
-  margin: 0 1rem;
+  margin: 0 3rem;
   color: #b833ff;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  border-bottom:  solid#b833ff ;
+  border-length: 200px;
 }
 
 .nav-links a:hover {
