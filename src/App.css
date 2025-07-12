@@ -79,3 +79,27 @@ body.light .navbar {
   font-size: 3.5rem;
   color: #fff;
 }
+
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  pointer-events: auto; /* ✅ make sure this is here */
+}
+
+.App {
+  position: relative;
+  z-index: 1;
+  
+}
+
+.navbar,
+.hero,
+button,
+a {
+  pointer-events: auto; 
+}
