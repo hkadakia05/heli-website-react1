@@ -1,9 +1,10 @@
 import React from 'react';
+import './ProfileImage.css'; 
 
 export default function ProfileImage() {
   return (
-    <div className="profile-img">
-      <img src="https://via.placeholder.com/250" alt="Profile" />
+    <div className="photo">
+      <img src="/images/IMG_9256.jpg" alt="Heli Kadakia" />
     </div>
   );
 }

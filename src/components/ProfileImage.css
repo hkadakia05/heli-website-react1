@@ -1,0 +1,6 @@
+.photo img {
+    width: 350px;
+    border-radius: 8px;
+    transform: translateX(-40px);
+  }
+  
