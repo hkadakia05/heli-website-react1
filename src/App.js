@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HELI from './components/HELI';
 import Particles from './components/Particles'; 
+import About from './components/About';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Particles />  
       <Navbar />
       <HELI />
+      <About/>
     </div>
   );
 }
