@@ -7,11 +7,12 @@ import About from './components/About';
 
 function App() {
   return (
-    <div className="App">
-      <Particles />  
+    <div className="App"> 
       <Navbar />
       <HELI />
       <About/>
+
+      <Particles /> 
     </div>
   );
 }
