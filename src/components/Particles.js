@@ -7,7 +7,9 @@ import React, { useEffect } from 'react';
 export default function Particles() {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = '/particles.min.js';
+   // script.src = '/particles.min.js';
+   script.src = `${process.env.PUBLIC_URL}/particles.min.js`;
+
     script.onload = () => {
       window.particlesJS('particles-js', {
         particles: {

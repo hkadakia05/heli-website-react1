@@ -12,7 +12,7 @@ body.light {
   font-family: 'Arial', sans-serif;
 }
 
-/* FIXED: use .navbar inside body classes */
+
 body.dark .navbar {
   display: flex;
   justify-content: space-between;
