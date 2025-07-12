@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: #b833ff;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  color: #b833ff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-links a:hover {
+  border-color: #b833ff;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+.profile-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 3rem;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text p {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}

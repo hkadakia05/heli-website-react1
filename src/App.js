@@ -1,11 +1,13 @@
 import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
 
 function App() {
   return (
     <div className="App">
-      <h1>yo</h1>
+      <Navbar />
+      <HeroSection />
     </div>
   );
 }
