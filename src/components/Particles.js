@@ -1,56 +1,58 @@
 //DISCLAIMER THIS IS NOT OWNED BY ME AT ALL CREDIT TO https://github.com/VincentGarreau/particles.js/
 //MY GOAT I LOVE THIS SH*T (what whos reading this anyways...)
 // src/components/Particles.js
-
 import React, { useEffect } from 'react';
 
 export default function Particles() {
   useEffect(() => {
-    const script = document.createElement('script');
-   // script.src = '/particles.min.js';
-   script.src = `${process.env.PUBLIC_URL}/particles.min.js`;
+    if (!document.getElementById('particles-script')) {
+      const script = document.createElement('script');
+      script.id = 'particles-script';
+      script.src = `${process.env.PUBLIC_URL}/particles.min.js`;
 
-    script.onload = () => {
-      window.particlesJS('particles-js', {
-        particles: {
-          number: {
-            value: 80,
-            density: { enable: true, value_area: 800 }
-          },
-          color: { value: '#888888' },
-          shape: { type: 'circle' },
-          opacity: { value: 0.5 },
-          size: { value: 3, random: true },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: '#b833ff',
-            opacity: 0.4,
-            width: 1
-          },
-          move: {
-            enable: true,
-            speed: 2,
-            direction: 'none',
-            out_mode: 'out'
-          }
-        },
-        interactivity: {
-          detect_on: 'canvas',
-          events: {
-            onhover: { enable: true, mode: 'repulse' },
-            onclick: { enable: true, mode: 'push' },
-            resize: true
-          },
-          modes: {
-            repulse: { distance: 100 },
-            push: { particles_nb: 4 }
-          }
-        },
-        retina_detect: true
-      });
-    };
-    document.body.appendChild(script);
+      script.onload = () => {
+        if (window.particlesJS) {
+          window.particlesJS('particles-js', {
+            particles: {
+              number: {
+                value: 80,
+                density: { enable: true, value_area: 800 }
+              },
+              color: { value: '#888888' },
+              shape: { type: 'circle' },
+              opacity: { value: 0.5 },
+              size: { value: 3, random: true },
+              line_linked: {
+                enable: true,
+                distance: 150,
+                color: '#b833ff',
+                opacity: 0.4,
+                width: 1
+              },
+              move: {
+                enable: true,
+                speed: 2,
+                direction: 'none',
+                out_mode: 'out'
+              }
+            },
+            interactivity: {
+              detect_on: 'canvas',
+              events: {
+                onclick: { enable: true, mode: 'push' },
+                resize: true
+              },
+              modes: {
+                push: { particles_nb: 7 }
+              }
+            },
+            retina_detect: true
+          });
+        }
+      };
+
+      document.body.appendChild(script);
+    }
   }, []);
 
   return (
