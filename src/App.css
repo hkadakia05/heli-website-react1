@@ -1,17 +1,34 @@
-body {
+body.dark {
   margin: 0;
   background-color: black;
   color: #b833ff;
   font-family: 'Arial', sans-serif;
 }
 
-.navbar {
+body.light {
+  margin: 0;
+  background-color: white;
+  color: #b833ff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* FIXED: use .navbar inside body classes */
+body.dark .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem;
+  padding: 2rem;
   align-items: center;
   background-color: black;
-  border-bottom: 2px;
+  
+}
+
+body.light .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  background-color: white;
+  
 }
 
 .nav-links a {
@@ -35,7 +52,8 @@ body {
 
 .profile-img img {
   width: 500px;
-  height: 10000px;
+  max-height: 500px; /* reasonable max height */
+  object-fit: cover;
   border-radius: 8px;
   margin-right: 3rem;
 }
@@ -58,8 +76,4 @@ body {
   margin-right: 1rem;
   font-size: 3.5rem;
   color: #fff;
-}
-
-.theme-toggle button{
-  background-color: black;
 }
