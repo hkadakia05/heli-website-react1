@@ -31,6 +31,32 @@ body.light .navbar {
   
 }
 
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body.light .theme-toggle {
+  background-color: white;
+  color: #b833ff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+body.dark .theme-toggle {
+  background-color: black;
+  color: #b833ff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
 .nav-links a {
   margin: 0 3rem;
   color: #b833ff;
@@ -61,13 +87,13 @@ body.light .navbar {
 }
 
 .intro-text h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0.5rem;
 }
 
 .intro-text p {
-  margin: 0.3rem 0;
-  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-size: 2rem;
 }
 
 .social-links {
@@ -88,7 +114,7 @@ body.light .navbar {
   z-index: -1;
   top: 0;
   left: 0;
-  pointer-events: auto; /* ✅ make sure this is here */
+  pointer-events: auto; 
 }
 
 .App {

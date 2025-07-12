@@ -13,6 +13,10 @@ export default function HELI() {
         <p><strong>SOFTWARE ENGINEER</strong></p>
         <SocialLinks />
       </div>
+
+      <div>
+        <p>WEBSITE UNDER DEVLOPMENT</p>
+      </div>
     </section>
   );
 }
