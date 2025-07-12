@@ -2,7 +2,7 @@ import React from 'react';
 import ProfileImage from './ProfileImage';
 import SocialLinks from './SocialLinks';
 
-export default function HeroSection() {
+export default function HELI() {
   return (
     <section className="hero">
       <ProfileImage />

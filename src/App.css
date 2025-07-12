@@ -8,8 +8,10 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   align-items: center;
+  background-color: black;
+  border-bottom: 2px;
 }
 
 .nav-links a {
@@ -32,9 +34,8 @@ body {
 }
 
 .profile-img img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
+  width: 500px;
+  height: 10000px;
   border-radius: 8px;
   margin-right: 3rem;
 }
@@ -55,6 +56,10 @@ body {
 
 .social-links a {
   margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   color: #fff;
+}
+
+.theme-toggle button{
+  background-color: black;
 }
