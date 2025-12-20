@@ -1,25 +1,22 @@
 import React from 'react';
 import './App.css';
+
 import Navbar from './components/Navbar';
 import HELI from './components/HELI';
-import Particles from './components/Particles'; 
 import About from './components/About';
+import Adventures from './components/Adventures';
+import Particles from './components/Particles';
 
 function App() {
   return (
-    <div className="App"> 
+    <div className="App">
       <Navbar />
       <HELI />
-      <About/>
-
-      <Particles /> 
+      <About />
+      <Adventures />  
+      <Particles />
     </div>
   );
 }
 
 export default App;
-
-
-
-
-

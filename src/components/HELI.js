@@ -14,9 +14,6 @@ export default function HELI() {
         <SocialLinks />
       </div>
 
-      <div>
-        <p>WEBSITE UNDER DEVLOPMENT</p>
-      </div>
     </section>
   );
 }
