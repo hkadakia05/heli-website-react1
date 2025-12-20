@@ -329,8 +329,3 @@ a {
   text-align: center;
 }
 
-.adventures-section {
-  background: red !important;
-  min-height: 400px !important;
-  z-index: 5;
-}
