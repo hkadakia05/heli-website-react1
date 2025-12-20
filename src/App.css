@@ -1,4 +1,6 @@
-
+/* =====================
+   GLOBAL THEME
+===================== */
 
 body.dark {
   margin: 0;
@@ -14,7 +16,9 @@ body.light {
   font-family: 'Arial', sans-serif;
 }
 
-
+/* =====================
+   NAVBAR
+===================== */
 
 .navbar {
   display: flex;
@@ -31,7 +35,9 @@ body.light .navbar {
   background-color: white;
 }
 
-
+/* =====================
+   NAV LINKS
+===================== */
 
 .nav-links a {
   margin: 0 3rem;
@@ -45,6 +51,9 @@ body.light .navbar {
   opacity: 0.8;
 }
 
+/* =====================
+   NAV ICONS (RIGHT SIDE)
+===================== */
 
 .nav-icons {
   display: flex;
@@ -52,7 +61,7 @@ body.light .navbar {
   gap: 1rem;
 }
 
- generic icon button 
+/* generic icon button */
 .icon-btn {
   background: none;
   border: none;
@@ -73,16 +82,19 @@ body.light .navbar {
   opacity: 0.8;
 }
 
+/* =====================
+   THEME TOGGLE (SUN)
+===================== */
 
 .theme-toggle {
-  position: relative;       
+  position: relative;       /* IMPORTANT: inline, not floating */
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0.25rem;
 }
 
-
+/* sun color */
 body.dark .theme-toggle {
   color: white;
 }
@@ -91,7 +103,9 @@ body.light .theme-toggle {
   color: black;
 }
 
-
+/* =====================
+   ICON COLORS (NOT PURPLE)
+===================== */
 
 body.dark .icon-btn {
   color: white;
@@ -101,7 +115,9 @@ body.light .icon-btn {
   color: black;
 }
 
-
+/* =====================
+   HERO SECTION
+===================== */
 
 .hero {
   display: flex;
@@ -129,6 +145,9 @@ body.light .icon-btn {
   font-size: 2rem;
 }
 
+/* =====================
+   SOCIAL LINKS
+===================== */
 
 .social-links {
   margin-top: 1rem;
@@ -140,7 +159,9 @@ body.light .icon-btn {
   color: white;
 }
 
-
+/* =====================
+   PARTICLES BACKGROUND
+===================== */
 
 #particles-js {
   position: fixed;
@@ -157,7 +178,7 @@ body.light .icon-btn {
   z-index: 1;
 }
 
-
+/* allow interaction */
 .navbar,
 .hero,
 button,
@@ -168,7 +189,9 @@ a {
   color: white !important;
 }
 
-
+/* =====================
+   SKILLS SECTION CARD
+===================== */
 
 .skills-section {
   min-height: 100vh;
@@ -191,7 +214,7 @@ a {
   gap: 3rem;
 }
 
- 
+/* tech columns */
 .tech h2 {
   color: black;
   margin-bottom: 1.5rem;
@@ -203,7 +226,7 @@ a {
   color: #555;
 }
 
-
+/* icons */
 .tech i,
 .tech img {
   font-size: 3rem;
@@ -211,6 +234,9 @@ a {
   margin: 0.4rem;
 }
 
+/* =====================
+   SCROLL REVEAL
+===================== */
 
 .reveal {
   opacity: 0;
@@ -223,7 +249,9 @@ a {
   transform: translateY(0);
 }
 
-
+/* =====================
+   ABOUT SECTION
+===================== */
 
 .about-section {
   padding: 6rem 2rem 8rem;
@@ -236,14 +264,14 @@ a {
   width: 100%;
 }
 
-
+/* heading */
 .about-container h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
   color: #b833ff;
 }
 
-
+/* paragraphs */
 .about-container p {
   font-size: 1.1rem;
   line-height: 1.7;
@@ -251,6 +279,37 @@ a {
   margin-bottom: 1.8rem;
 }
 
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-track img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 24px;
+  flex-shrink: 0;
+}
+
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+/* =====================
+   ADVENTURES HEADINGS
+===================== */
 
 
 .adventures-section {
@@ -260,11 +319,6 @@ a {
   text-align: center;
 }
 
-.about-container h2 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  color: #b833ff;
-}
 
 .adventures-section h2 {
   width: 100%;
