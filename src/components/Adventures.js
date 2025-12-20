@@ -8,15 +8,15 @@ export default function Adventures() {
       <div className="carousel">
         <div className="carousel-track">
           {/* first set */}
-          <img src={`${process.env.PUBLIC_URL}/img/coast.jpeg`} alt="Coast" />
-          <img src={`${process.env.PUBLIC_URL}/img/run.jpg`} alt="Run" />
-          <img src={`${process.env.PUBLIC_URL}/img/l1rocket.jpg`} alt="Rocket" />
+          <img src={`${process.env.PUBLIC_URL}/Images/coast.jpeg`} alt="Coast" />
+          <img src={`${process.env.PUBLIC_URL}/Images/run.jpg`} alt="Run" />
+          <img src={`${process.env.PUBLIC_URL}/Images/l1rocket.jpg`} alt="Rocket" />
 
+          {/* duplicate set */}  
+          <img src={`${process.env.PUBLIC_URL}/Images/coast.jpeg`} alt="Coast" />
+          <img src={`${process.env.PUBLIC_URL}/Images/run.jpg`} alt="Run" />
+          <img src={`${process.env.PUBLIC_URL}/Images/l1rocket.jpg`} alt="Rocket" />
 
-          {/* duplicate set for seamless loop */}
-          <img src={`${process.env.PUBLIC_URL}/img/coast.jpeg`} alt="Coast" />
-          <img src={`${process.env.PUBLIC_URL}/img/run.jpg`} alt="Run" />
-          <img src={`${process.env.PUBLIC_URL}/img/l1rocket.jpg`} alt="Rocket" />
         </div>
       </div>
 
