@@ -7,15 +7,24 @@ export default function Adventures() {
 
       <div className="carousel">
         <div className="carousel-track">
-          {/* first set */}
-          <img src={`${process.env.PUBLIC_URL}/Images/coast.jpeg`} alt="Coast" />
-          <img src={`${process.env.PUBLIC_URL}/Images/run.jpg`} alt="Run" />
-          <img src={`${process.env.PUBLIC_URL}/Images/l1rocket.jpg`} alt="Rocket" />
 
-          {/* duplicate set */}  
-          <img src={`${process.env.PUBLIC_URL}/Images/coast.jpeg`} alt="Coast" />
-          <img src={`${process.env.PUBLIC_URL}/Images/run.jpg`} alt="Run" />
-          <img src={`${process.env.PUBLIC_URL}/Images/l1rocket.jpg`} alt="Rocket" />
+          {/* GROUP 1 */}
+          <div className="carousel-group">
+            <img src={`${process.env.PUBLIC_URL}/Images/coast.jpeg`} alt="Coast" />
+            <img src={`${process.env.PUBLIC_URL}/Images/run.jpg`} alt="Run" />
+            <img src={`${process.env.PUBLIC_URL}/Images/l1rocket.jpg`} alt="Rocket" />
+            <img src={`${process.env.PUBLIC_URL}/Images/Hike.jpg`} alt="Hike" />
+            <img src={`${process.env.PUBLIC_URL}/Images/Nvidiahackathon.jpg`} alt="Hackathon" />
+          </div>
+
+          {/* GROUP 2 — EXACT DUPLICATE */}
+          <div className="carousel-group">
+            <img src={`${process.env.PUBLIC_URL}/Images/coast.jpeg`} alt="Coast" />
+            <img src={`${process.env.PUBLIC_URL}/Images/run.jpg`} alt="Run" />
+            <img src={`${process.env.PUBLIC_URL}/Images/l1rocket.jpg`} alt="Rocket" />
+            <img src={`${process.env.PUBLIC_URL}/Images/Hike.jpg`} alt="Hike" />
+            <img src={`${process.env.PUBLIC_URL}/Images/Nvidiahackathon.jpg`} alt="Hackathon" />
+          </div>
 
         </div>
       </div>
@@ -24,3 +33,4 @@ export default function Adventures() {
     </section>
   );
 }
+
