@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HELI from './components/HELI';
 import About from './components/About';
+import Projects from './components/Projects';
 import Adventures from './components/Adventures';
 import Particles from './components/Particles';
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <HELI />
       <About />
+      <Projects />
       <Adventures />  
       <Particles />
     </div>
